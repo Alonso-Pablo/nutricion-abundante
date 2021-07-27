@@ -13,7 +13,8 @@ import useWindowSize from '../Hooks/useWindowSize';
 
 
 export const getServerSideProps = async () => {
-  const response = await fetch('http://localhost:3000/api/products')
+  // const response = await fetch('http://localhost:3000/api/products') // Dev
+  const response = await fetch('https://nutricion-abundante.vercel.app/api/products');
   const { data } = await response.json()
   return {
     props: {
@@ -29,11 +30,10 @@ export default function Products({ data }) {
     const hash = window.location.hash
     const { id } = router.query
     if (id !== undefined && hash === '') {
-      router.replace(`http://localhost:3000/products#${id}`);
+      router.replace(`https://nutricion-abundante.vercel.app/products#${id}`);
+      //router.replace(`http://localhost:3000/products#${id}`); // Dev
     }
-
   }
-
 
   const allProducts = Object.values(data[0]);
   const styleSelected = [colors.purple, colors.white]
@@ -311,5 +311,3 @@ export const SectionItem = styled.button`
   cursor: pointer;
   border: none;
 `;
-
-// color={colors.white} backgroundColor={colors.purple}

@@ -12,7 +12,8 @@ import useWindowSize from '../Hooks/useWindowSize';
 
 
 export const getServerSideProps = async () => {
-  const response = await fetch('http://localhost:3000/api/products')
+  // const response = await fetch('http://localhost:3000/api/products') // Dev
+  const response = await fetch('https://nutricion-abundante.vercel.app/api/products');
   const { data } = await response.json()
   return {
     props: {

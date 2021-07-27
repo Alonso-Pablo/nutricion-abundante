@@ -56,7 +56,8 @@ export default function Navigator({isDeviceCellphone}) {
     e.preventDefault();
     const hash = handleHash(e.target.search.value);
     router.push({
-      pathname: `http://localhost:3000/products`,
+      // pathname: `http://localhost:3000/products`, // Dev
+      pathname: `https://nutricion-abundante.vercel.app/products`,
       query: { id: hash}
     })
 

@@ -117,17 +117,14 @@ export default function Products({ data }) {
       setIsSelected(id);
       setIsFiltered(true);
       setCategory(arrayCategory);
-      // console.log('setea por primera vez') // for Dev
     } else if (category.toString() === arrayCategory.toString()) {
       setIsSelected(undefined);
       setIsFiltered(false);
       setCategory(undefined);
-      // console.log('reset') // for Dev
     } else {
       setIsSelected(id);
       setIsFiltered(true);
       setCategory(arrayCategory);
-      // console.log('era de otra categoria') // for Dev
     }
   }
 
@@ -157,7 +154,7 @@ export default function Products({ data }) {
       return handleCategory(4, digestionSaludable);
     }
 
-    return console.log('error')
+    return
   };
 
   return (

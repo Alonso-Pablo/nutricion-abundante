@@ -59,15 +59,15 @@ export default function Home() {
         <meta property="og:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
         <meta property="og:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />
         <meta property="og:url" content="https://nutricion-abundante.vercel.app/" />
-        <meta property="og:image" content="https://raw.githubusercontent.com/Alonso-Pablo/nutricion-abundante/main/public/og-1000x500.png" />
+        <meta property="og:image" content="https://nutricion-abundante.vercel.app/og-1000x500.png" />
         <meta property="og:site_name" content="Nutrición Abundante" />
         <meta property="og:locale" content="es_AR" />
         <meta property="og:type" content="website" />
 
-        <meta name="twitter:card" content="https://raw.githubusercontent.com/Alonso-Pablo/nutricion-abundante/main/public/og-1000x500.png" />
+        <meta name="twitter:card" content="https://nutricion-abundante.vercel.app/og-1000x500.png" />
         <meta name="twitter:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
         <meta name="twitter:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/Alonso-Pablo/nutricion-abundante/main/public/og-1000x500.png" />
+        <meta name="twitter:image" content="https://nutricion-abundante.vercel.app/og-1000x500.png" />
 
       </Head>
 

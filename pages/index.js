@@ -49,12 +49,26 @@ export default function Home() {
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />
         <meta name="keywords" content="Omnilife - Productos Omnilife - Comprar Omnilife - Power Maker - Omniplus" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>Nutrición Abundante - Distribuidores Independientes de Productos Nutricionales Omnilife y Seytú</title>
         <meta charSet="UTF-8" />
         <meta name="description" content="En Nutrición Abundante encontrarás productos nutricionales para suplir tus necesidades vitaminicas y minerales en el día a día. Somos distribuidores independientes de Omnilife" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nutrición Abundante - Distribuidores Independientes de Productos Nutricionales Omnilife</title>
-        <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+        <meta property="og:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
+        <meta property="og:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />
+        <meta property="og:url" content="https://nutricion-abundante.vercel.app/" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/Alonso-Pablo/nutricion-abundante/main/public/og-1000x500.png" />
+        <meta property="og:site_name" content="Nutrición Abundante" />
+        <meta property="og:locale" content="es_AR" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="https://raw.githubusercontent.com/Alonso-Pablo/nutricion-abundante/main/public/og-1000x500.png" />
+        <meta name="twitter:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
+        <meta name="twitter:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/Alonso-Pablo/nutricion-abundante/main/public/og-1000x500.png" />
+
       </Head>
 
       <Navigator isDeviceCellphone={isDeviceCellphone}/>

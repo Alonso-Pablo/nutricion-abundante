@@ -86,7 +86,7 @@ export default function Products({ data }) {
     'mtxns5d7lh', // cafezzino
     'pjt1wax88y', // dolcevita
     'dwojs605la', // fiber
-    'rk2squ71zw', // thermogencoffeebote
+    //'rk2squ71zw', // thermogencoffeebote
     'zwerv8ui7e', // thermogencoffeecaja
     'w9as4biz39', // thermogentealimon
     'euayazcur0', // thermogenteamaracuya
@@ -95,7 +95,7 @@ export default function Products({ data }) {
   const energiaYRendimiento = [
     'v5izv5wo26', // aqtua
     'h8blaufecx', // biocrosbote
-    'ese9nc90kc', // briocroscaja
+    //'ese9nc90kc', // briocroscaja
     'gitu12xtru', // biocrossupreme
     'g4n20z9xqv', // ego10
     'dp85p194jw', // egolife

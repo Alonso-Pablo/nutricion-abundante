@@ -54,7 +54,6 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta name="description" content="En Nutrición Abundante encontrarás productos nutricionales para suplir tus necesidades vitaminicas y minerales en el día a día. Somos distribuidores independientes de Omnilife" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet" />
 
         <meta property="og:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
         <meta property="og:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />

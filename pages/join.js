@@ -53,7 +53,6 @@ export default function join({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nutrición Abundante - Distribuidores Independientes de Productos Nutricionales Omnilife</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet" />
       </Head>
 
       <Navigator isDeviceCellphone={isDeviceCellphone}/>

@@ -54,20 +54,6 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta name="description" content="En Nutrición Abundante encontrarás productos nutricionales para suplir tus necesidades vitaminicas y minerales en el día a día. Somos distribuidores independientes de Omnilife" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <meta property="og:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
-        <meta property="og:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />
-        <meta property="og:url" content="https://nutricion-abundante.vercel.app/" />
-        <meta property="og:image" content="https://nutricion-abundante.vercel.app/og-1000x500.png" />
-        <meta property="og:site_name" content="Nutrición Abundante" />
-        <meta property="og:locale" content="es_AR" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="https://nutricion-abundante.vercel.app/og-1000x500.png" />
-        <meta name="twitter:title" content="Nutrición Abundante - Distribuidores Independientes de productos Omnilife y Seytú" />
-        <meta name="twitter:description" content="Aquí vas a encontrar productos nutricionales para tener una mejor alimentación diaria" />
-        <meta name="twitter:image" content="https://nutricion-abundante.vercel.app/og-1000x500.png" />
-
       </Head>
 
       <Navigator isDeviceCellphone={isDeviceCellphone}/>

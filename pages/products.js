@@ -45,6 +45,7 @@ export default function Products({ data }) {
 
   let [ productList, setProductList] = useState(allProducts);
   let [ isReverse, setIsReverse ] = useState(false);
+  let [ onlyNutrition, setOnlyNutrition ] = useState(true);
   let [ isFiltered, setIsFiltered ] = useState(false);
   let [ isSelected, setIsSelected ] = useState(undefined);
   let [ category, setCategory ] = useState(undefined);
@@ -112,8 +113,109 @@ export default function Products({ data }) {
     'dwojs605la', // fiber
   ];
 
-  const handleCategory = (id, arrayCategory) => {
-    if (category === undefined ) {
+  const nutricion = [
+    'havgutsdk8', // aloe200ml
+    'ao733fzisx', // aloe960mllimon
+    'ealgvw2efs', // aloe960mlanana
+    'v5izv5wo26', // aqtua
+    'h8blaufecx', // biocrosbote
+    'gitu12xtru', // biocrossupreme
+    'mtxns5d7lh', // cafezzino
+    'pjt1wax88y', // dolcevita
+    'ja45fsg01r', // egofrutas
+    'g4n20z9xqv', // ego10
+    'nekmvtn4qc', // egoherbal
+    'dp85p194jw', // egolife
+    'nr9t7ccpte', // estop
+    'i724pgvlu5', // fem
+    'dwojs605la', // fiber
+    't365os8ghv', // focus
+    'sbqwskcch0', // focussupreme
+    'nt1dw8veuv', // homo
+    'rbpds7ghbt', // vkids
+    'j40eykjgp6', // shake
+    'sspcfst3o3', // omniost
+    'anatste2we', // omnipluscaja
+    'qmxz4dxlq9', // omniplusbote
+    's9omfblcq2', // omniplussupreme
+    'zbpxcedlyz', // omniviu
+    'r1y8of8rkx', // onecmix
+    'wtw41dsipr', // powermaker
+    'i1q6k4ikb6', // powermakersupreme
+    'fcvkjnfb79', // starbien
+    'e53d4r3hb8', // supermixchocolate
+    'gtfs2lkmm8', // supermixsupreme
+    'zwerv8ui7e', // thermogencoffeecaja
+    'w9as4biz39', // thermogentealimon
+    'euayazcur0', // thermogenteamaracuya
+    'eurerg4ur0', // uzo
+  ]
+
+  const cosmetica = [
+    '9pEB9HL8o3', // acondicionador
+    'Tof3MIgolU', // balsamo
+    'Zw9VH2ssxx', // cosmetiquera
+    'cHyS2kJVQX', // cremademanosmanzanapera
+    'pZFjc4wYm2', // cremademanossandiamelon
+    'bfIqDorv12', // cremademanosvainilla
+    '9wRyV9WZMq', // cremafacialdedia
+    'yP3Jo2XV8Z', // cremafacialdenoche
+    'v8VNUOGisW', // cremanutritivadedia
+    '5JmI4fM0F5', // cremanutritivadenoche
+    'hC53XR5LxB', // cremaprotectorasolar
+    'uzUNaYYUgP', // delineadorliquido
+    'xFyj5Hjvhl', // desmaquillanteparaojos
+    'dsPuGNtU3w', // espumalimpiadorafacial
+    'foON0tZdfG', // exfoliantefacial
+    'jdEQZAjFeH', // fraganciaforher
+    'LSavpM8h0M', // fraganciaforhim
+    'fN0mKsafwq', // kitseytu
+    'RRE6G7AbzQ', // labialhidratantepurered
+    'xkT5jRQUgw', // labialhidratanteraspberry
+    'AoPGp8AmgW', // labialhidratanterosey
+    'LS1CT0u2TP', // labialhidratantesilverrose
+    'TAoFkEQP5i', // labialhidratantewineberry
+    '1X773lTTGl', // labialliquidonairobi
+    '2YXW8rjIsY', // labialliquidomasai
+    'Yyyx2Wf0bJ', // labialliquidosamburu
+    'VLwFrBQvcb', // labialliquidokalahari
+    'G9vurbESHn', // lapizdelineadorcafe
+    'wRLD7QAgFy', // lapizdelineadornegro
+    'cuUfblwhnn', // locionburdeos
+    'K8Dy7EhbMS', // locionparis
+    'SUc9j2fO5e', // locioncannes
+    'EpCr0HTDPX', // maquillajecompactocreamynatural
+    'tBOaAYZeOx', // maquillajecompactofair
+    'Zi9CwI1IjI', // maquillajecompactolightsand
+    'r909q4iWxZ', // maquillajecompactonaturalbeige
+    'u0Az8Tfmjh', // maquillajecompactosofthoney
+    '3tXUy9iyJ4', // maquillajecompactosunbeige
+    'r2zboiDQut', // maquillajecompactowarmbeige
+    'J35hRgNh4H', // mascaraparapestaniawsb
+    'RpmmKY37By', // maquillajeliquidogoldenbeige
+    'Bv9gI9dqYB', // maquillajeliquidonudebeige
+    'DV2xuEYt1x', // maquillajeliquidonaturalbeige
+    'wml0Hxr0kq', // maquillajeliquidofp15fair
+    'eXMTQjkaLZ', // maquillajeliquidofp15softhoney
+    'rUh9jVmMQp', // maquillajeliquidofp15warmbeige
+    'oVWnIhRlKV', // maquillajeliquidofp15creamynatural
+    'FE9kokwcQL', // maquillajeliquidofp15sunbeige
+    'zGROA7P0pO', // maquillajeliquidofp15lightsand
+    'YE1AL5Hwcx', // omniplusgelpremium
+    'Y57m7uh9cK', // polvoiluminadordesertrose
+    'BVsHP39pp2', // polvoiluminadordesertsand
+    'V1YbmFz4Zx', // polvoiluminadordesertsunset
+    'qDJrLqoAZL', // ruborpetal
+    'WWT4aF9j0U', // rubornectar
+    'zulXbuerNj', // setbrochasprofesionales
+    'k2s6vlRcwV', // shampoo
+    'jKgFxKPRjZ', // suerofacialdehidratacion
+    '6ghzKuvK5w', // sueroparacontornodeojos
+    'rXpV4tSHiW', // mascarillareparadoracapilar
+  ]
+
+  const handleCategory = ({ id, arrayCategory }) => {
+    if (category === undefined) {
       setIsSelected(id);
       setIsFiltered(true);
       setCategory(arrayCategory);
@@ -138,20 +240,30 @@ export default function Products({ data }) {
       setProductList(allProducts.reverse());
     }
 
+    if (string === 'cosmetica') {
+      setOnlyNutrition(false)
+      return handleCategory({ id: 5, arrayCategory: cosmetica });
+    }
+
+    if (string === 'nutricion') {
+      setOnlyNutrition(true)
+      return handleCategory({ id: 6, arrayCategory: nutricion });
+    }
+
     if (string === 'nutricionATuMedida') {
-      return handleCategory(1, nutricionATuMedida);
+      return handleCategory({ id: 1, arrayCategory: nutricionATuMedida });
     }
 
     if (string === 'controlDePeso') {
-      return handleCategory(2, controlDePeso);
+      return handleCategory({ id: 2, arrayCategory: controlDePeso });
     }
 
     if (string === 'energiaYRendimiento') {
-      return handleCategory(3, energiaYRendimiento);
+      return handleCategory({ id: 3, arrayCategory: energiaYRendimiento });
     }
 
     if (string === 'digestionSaludable') {
-      return handleCategory(4, digestionSaludable);
+      return handleCategory({ id: 4, arrayCategory: digestionSaludable });
     }
 
     return
@@ -195,6 +307,17 @@ export default function Products({ data }) {
                 :
                 <SectionItem onClick={() => handleclick("zA")}>
                   <p>Ordenar de Z a la A</p>
+                </SectionItem>
+              }
+
+              { onlyNutrition
+                ?
+                <SectionItem {...isSelected === 5 && styleSelected} onClick={() => handleclick("cosmetica")}>
+                  <p>Seytú Cosmetica</p>
+                </SectionItem>
+                :
+                <SectionItem {...isSelected === 6 && styleSelected} onClick={() => handleclick("nutricion")}>
+                  <p>Omnilife Nutrición</p>
                 </SectionItem>
               }
 

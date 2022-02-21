@@ -228,7 +228,7 @@ const data = {
       description: {
         content: 'Caja de 12 sobres de 50g (600g)',
         flavor: 'Cookies & Cream (Endulzado con Stevia)',
-        ingredients: 'Vitamina A, , Vitamina C, Vitamina D, Vitamina E, Tiamina B1, Riboflavina B2, Niacina B3, Ácido Pantoténico B5,Piridoxina B6, Ácido Fólico B9, Vitamina B12, Biotina, Calcio, Hierro, Magnesio, Zinc, Yodo, Vitamina K, Cobre, Molibdeno, Aislado de Proteina de Soja, Aceite Encapsulado de Canola (Aceite de Canola (Brassica campestris)) y Cacao.',
+        ingredients: 'Vitamina A, , Vitamina C, Vitamina D, Vitamina E, Tiamina B1, Riboflavina B2, Niacina B3, Ácido Pantoténico B5, Piridoxina B6, Ácido Fólico B9, Vitamina B12, Biotina, Calcio, Hierro, Magnesio, Zinc, Yodo, Vitamina K, Cobre, Molibdeno, Aislado de Proteina de Soja, Aceite Encapsulado de Canola (Aceite de Canola (Brassica campestris)) y Cacao.',
         price: 3640,
       }
     },
@@ -424,7 +424,7 @@ const data = {
       image: '/images/products/balsamo_labial_omniplus_fps_15.webp',
       description: {
         content: '8g',
-        ingredients: 'Extracto de omniplus,aceite de coco,manteca de murumuru y karité.',
+        ingredients: 'Extracto de omniplus, aceite de coco, manteca de murumuru y karité.',
         price: 1025,
       }
     },

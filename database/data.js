@@ -480,7 +480,7 @@ const data = {
     },
     'cremafacialdenoche': {
       name: 'Crema facial de noche',
-      id: 'yP3Jo_XV8Z',
+      id: 'yP3Jo2XV8Z',
       image: '/images/products/crema_facial_denoche.webp',
       description: {
         content: '50g',
@@ -810,7 +810,7 @@ const data = {
     },
     'mascaraparapestaniawsb': {
       name: 'Máscara pestañas WSB Flawless Lashes',
-      id: 'Jj3hRGNh4H',
+      id: 'J35hRgNh4H',
       image: '/images/products/mascara_para_pestania_wsb.png',
       description: {
         content: '6ml; Máxima definición y volumen. Fórmula de larga duración y resistencia al sudor. Efecto "peel off", remueve fácilmente con agua tibia sin manchar la piel. Con activos que aseguran la hidratación y protección de sus pestañas.',

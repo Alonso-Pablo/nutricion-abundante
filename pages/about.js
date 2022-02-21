@@ -58,9 +58,9 @@ export default function about({data}) {
         <meta name="robots" content="follow" />
         <meta name="keywords" content="Omnilife - Productos Omnilife - Comprar Omnilife - Power Maker - Omniplus" />
         <meta charSet="UTF-8" />
-        <meta name="description" content="En Nutrición Abundante encontrarás productos nutricionales para suplir tus necesidades vitaminicas y minerales en el día a día. Somos distribuidores independientes de Omnilife" />
+        <title>Nutrición Abundante - Productos Nutricionales Omnilife y Seytú</title>
+        <meta name="description" content="Nutrición Abundante te ofrece productos nutricionales para suplir tus necesidades alimentición en el día a día. Distribuidores Independientes de Omnilife" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nutrición Abundante - Distribuidores Independientes de Productos Nutricionales Omnilife</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
